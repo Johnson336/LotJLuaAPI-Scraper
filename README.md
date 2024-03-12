@@ -3,7 +3,7 @@ Scrapes the LotJ Lua API to create Lua function definitions for your Lua scripti
 
 ---
 ### Brief
-Download the pre-built library of LotJ Lua API definitions *[here](https://github.com/Johnson336/LotJLuaAPI-Scraper/LotJLuaAPI/)*, or download the JavaScript web scraper program and follow the directions below to scrape the LotJ Lua API website to generate your own copy of definition files.
+Download the pre-built library of LotJ Lua API definitions *[here](https://github.com/Johnson336/LotJLuaAPI-Scraper/tree/main/LotJLuaAPI)*, or download the JavaScript web scraper program and follow the directions below to scrape the LotJ Lua API website to generate your own copy of definition files.
 
 ### Summary
 This is a JavaScript web scraper utilizing NodeJS libraries Cheerio, Axios, and FS to generate
