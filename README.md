@@ -13,8 +13,8 @@ LotJ Lua API functions and data types are unrecognized.
 ![Code Before](assets/code_before.jpg)
 
 ### __After__
-LotJ Lua API-specific functions and data types are recognized based on the data scraped from the public LotJ Lua API website, providing function descriptions and accurate function parameter prototypes.
-![Code After](assets/code_after.jpg)
+LotJ Lua API-specific functions and data types are recognized based on the data scraped from the public LotJ Lua API website, providing autocompletion of function descriptions, Usage examples, accurate function parameter prototypes and return values.
+![Code After](assets/code_after2.png)
 
 ---
 ### Usage
