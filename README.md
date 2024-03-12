@@ -2,11 +2,14 @@
 Scrapes the LotJ Lua API to create Lua function definitions for your Lua scripting environment
 
 ---
+### Brief
+Download the pre-built library of LotJ Lua API definitions *[here](https://github.com/Johnson336/LotJLuaAPI-Scraper/LotJLuaAPI/)*, or download the JavaScript web scraper program and follow the directions below to scrape the LotJ Lua API website to generate your own copy of definition files.
+
 ### Summary
-This is a JavaScript web scraper utilizing NodeJS libraries Cheerio, Axios, and FS to retrieve
+This is a JavaScript web scraper utilizing NodeJS libraries Cheerio, Axios, and FS to generate
 Lua function definitions and format them into a valid file structure for use in creating a LotJ Lua 
-scripting environment in your VScode or Neovim, providing autocompletion and function comments
-while showing valid function parameter structures.
+scripting environment in your VScode, Neovim, or other modern coding program. These definitions will provide autocompletion while 
+showing full function descriptions, usage examples, function parameters, and function return values.
 
 ### __Before__
 LotJ Lua API functions and data types are unrecognized.
