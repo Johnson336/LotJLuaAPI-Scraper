@@ -167,7 +167,7 @@ function Character:echoAt (text) end
 ---```
 ---@param amount number the amount of experience to award
 ---@param ability string the class name (bounty hunting, combat, etc)
----@param groupGain boolean whether to give the same experience to a leader main's group (optional, defaults to false)
+---@param groupGain? boolean whether to give the same experience to a leader main's group (optional, defaults to false)
 function Character:gainExp (amount, ability, groupGain) end
 
 ---perform the given emote.
@@ -202,8 +202,8 @@ function Character:gainLevels (amount, ability) end
 ---    ch:force("say Hello there!")
 ---```
 ---@param command string the command to run
----@param account string (optional) The account to use to elevate privileges of the force (to 103, or the top level of the account, whichever is less).
----@param totp string (optional, required with account) the totp code for the specified account. If not valid, the force will still happen just without elevated privileges.
+---@param account? string (optional) The account to use to elevate privileges of the force (to 103, or the top level of the account, whichever is less).
+---@param totp? string (optional, required with account) the totp code for the specified account. If not valid, the force will still happen just without elevated privileges.
 function Character:force (command, account, totp) end
 
 ---get the character's current carried weight.
@@ -478,7 +478,7 @@ function Character:getVarTimer (varName) end
 ---    ch:echoAt("I have met you "..ch:getVar("wroona.timesMetMob", 1).." times.")
 ---```
 ---@param varName string the name of the variable to get
----@param default any an optional default value (string, number, or boolean) to return if the variable is unset
+---@param default? any an optional default value (string, number, or boolean) to return if the variable is unset
 ---@return boolean|number|string|nil # the value, or the default or nil if it's not set. Can be a bool, number, or string.
 function Character:getVar (varName, default) end
 
@@ -942,7 +942,7 @@ function Character:setSusceptible (the, to) end
 ---```
 ---@param varName string the name of the variable to set
 ---@param value any the value, a string, number, or boolean. Pass in nil here to remove a variable.
----@param ttl number the number of seconds to keep the variable, in seconds. (optional, if not specified it's kept indefinitely)
+---@param ttl? number the number of seconds to keep the variable, in seconds. (optional, if not specified it's kept indefinitely)
 function Character:setVar (varName, value, ttl) end
 
 ---instantly kill a character.

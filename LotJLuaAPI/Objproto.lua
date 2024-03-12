@@ -78,7 +78,7 @@ function Objproto:onExamine (callback) end
 ---    ch:echoAt("You carefully scoop up the pile of powder.")
 ---    end)
 ---```
----@param room any an optional flag to only trigger if the object is gotten from the room (as opposed to a container)
+---@param room? any an optional flag to only trigger if the object is gotten from the room (as opposed to a container)
 ---@param callback function  the function to run, taking arguments: 1. this Object 2. the Character who picked up the object       
 function Objproto:onGet (room, callback) end
 

@@ -117,7 +117,7 @@ function Object:getValue5 () end
 
 ---get an object's variable by name
 ---@param varName string the name of the variable to get
----@param default any an optional default value (string, number, or boolean) to return if the variable is unset
+---@param default? any an optional default value (string, number, or boolean) to return if the variable is unset
 ---@return boolean|number|string|nil # the value, or the default or nil if it's not set. Can be a bool, number, or string.
 function Object:getVar (varName, default) end
 
@@ -231,7 +231,7 @@ function Object:setValue5 (value) end
 ---```
 ---@param varName string the name of the variable to set
 ---@param value any the value, a string, number, or boolean. Pass in nil here to remove a variable.
----@param ttl number the number of seconds to keep the variable, in seconds. (optional, if not specified it's kept indefinitely)
+---@param ttl? number the number of seconds to keep the variable, in seconds. (optional, if not specified it's kept indefinitely)
 function Object:setVar (varName, value, ttl) end
 
 ---set a wearloc on this object.

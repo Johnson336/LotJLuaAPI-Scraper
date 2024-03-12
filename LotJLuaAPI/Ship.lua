@@ -25,26 +25,26 @@ function Ship.prototype.characters (self) end
 
 ---damage the ship with conventional damage (not ion).
 ---@param damage integer the amount of ion damage to do (affects shields 2x this much)
----@param byCharacter Character the character to attribute the damage to (optional)
+---@param byCharacter? Character the character to attribute the damage to (optional)
 ---@return Ship # this ship, for call chaining
 function Ship:damageIon (damage, byCharacter) end
 
 ---damage the ship with conventional damage (not ion).
 ---@param damage integer the amount of damage to do
----@param byCharacter Character the character to attribute the damage to (optional)
----@param byShip Ship the ship to attribute the damage to (optional)
+---@param byCharacter? Character the character to attribute the damage to (optional)
+---@param byShip? Ship the ship to attribute the damage to (optional)
 ---@return Ship # this ship, for call chaining
 function Ship:damage (damage, byCharacter, byShip) end
 
 ---immediately destroy this ship.
----@param byCharacter Character the character to attribute the destruction to (optional)
----@param byShip Ship the ship to attribute the destruction to (optional)
+---@param byCharacter? Character the character to attribute the destruction to (optional)
+---@param byShip? Ship the ship to attribute the destruction to (optional)
 function Ship:destroy (byCharacter, byShip) end
 
 ---create a ship from a ship template.
 ---The ship will be spawned in room 45 with no owner set, and should then be moved to the location you want
 ---@param template string the name of the template to use, as in xwing.img
----@param baseName string the base name of the ship ("X-Wing Starfighter"), optional if basename is set on the template.
+---@param baseName? string the base name of the ship ("X-Wing Starfighter"), optional if basename is set on the template.
 ---@return Ship # the created ship
 function Ship.create (template, baseName) end
 

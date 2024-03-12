@@ -48,8 +48,8 @@ function Clan:getCapital () end
 
 ---add or substract from clan funds.
 ---@param amount integer the amount to add. Negative amounts will subtract from the balance.
----@param who string the name to use for a banklog entry. Optional; if not specified, no banklog entry will be made.
----@param reason string the reason to use for a banklog entry. Optional.
+---@param who? string the name to use for a banklog entry. Optional; if not specified, no banklog entry will be made.
+---@param reason? string the reason to use for a banklog entry. Optional.
 function Clan:addFunds (amount, who, reason) end
 
 ---get the name of the clan's second.

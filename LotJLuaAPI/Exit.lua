@@ -21,7 +21,7 @@ Exit = {}
 ---@param from Room the room (or vnum) to link from
 ---@param direction string the exit direction (e.g. north, n, or a custom string)
 ---@param to Room the room (or vnum) to link to
----@param both boolean whether to create a mirroring exit back from the target room to the source (optional, defaults to true)
+---@param both? boolean whether to create a mirroring exit back from the target room to the source (optional, defaults to true)
 ---@return Exit # the new exit
 function Exit.create (from, direction, to, both) end
 

@@ -6,7 +6,7 @@ Furniture = {}
 
 ---create a new piece of furniture.
 ---@param short string the short description (required)
----@param long string the long description (optional, defaults to short description)
+---@param long? string the long description (optional, defaults to short description)
 ---@return Furniture # the new furniture object.
 function Furniture.create (short, long) end
 

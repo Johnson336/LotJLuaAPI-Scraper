@@ -383,8 +383,8 @@ function Room:onDrop (callback) end
 ---    )
 ---```
 ---@param dir string the name of the exit (n, north, etc)
----@param keywords string the list of words to trigger the door. (Optional, uses " access enter entry" if not set.)
----@param accessCheck function  A function which determines whether a character can use the door. (Optional, use nil if not specifying.)       
+---@param keywords? string the list of words to trigger the door. (Optional, uses " access enter entry" if not set.)
+---@param accessCheck? function  A function which determines whether a character can use the door. (Optional, use nil if not specifying.)       
 function Room:setAccessDoor (dir, keywords, accessCheck) end
 
 ---sets up a voice-activated locked door which works for members of the given clan.
@@ -407,7 +407,7 @@ function Room:setAccessDoor (dir, keywords, accessCheck) end
 ---    )
 ---```
 ---@param dir string the name of the exit (n, north, etc)
----@param keywords string the list of words to trigger the door. (Optional, uses " access enter entry" if not set.)
+---@param keywords? string the list of words to trigger the door. (Optional, uses " access enter entry" if not set.)
 ---@param clanName string the clan which the door works for
 function Room:setClanAccessDoor (dir, keywords, clanName) end
 
@@ -436,7 +436,7 @@ function Room:setName (name) end
 ---set a variable on a room
 ---@param varName string the name of the variable to set
 ---@param value any the value, a string, number, or boolean. Pass in nil here to remove a variable.
----@param ttl number the number of seconds to keep the variable, in seconds. (optional, if not specified it's kept indefinitely)
+---@param ttl? number the number of seconds to keep the variable, in seconds. (optional, if not specified it's kept indefinitely)
 function Room:setVar (varName, value, ttl) end
 
 ---get an iterator over ships in the room
@@ -470,7 +470,7 @@ function Room:ships () end
 ---    )
 ---```
 ---@param dir string the name of the exit (n, north, etc)
----@param keywords string the list of words to trigger the door. (Optional, uses " access enter entry" if not set.)
+---@param keywords? string the list of words to trigger the door. (Optional, uses " access enter entry" if not set.)
 ---@param clanName string the clan which the door works for. Use "local" to check the current planet government.
 function Room:setClanLeaderAccessDoor (dir, keywords, clanName) end
 

@@ -32,7 +32,7 @@ function LOTJ.getEra () end
 
 ---get a global variable by name
 ---@param varName string the name of the variable to get
----@param default any an optional default value (string, number, or boolean) to return if the variable is unset
+---@param default? any an optional default value (string, number, or boolean) to return if the variable is unset
 ---@return boolean|number|string|nil # the value, or the default or nil if it's not set. Can be a bool, number, or string.
 function LOTJ.getGlobalVar (varName, default) end
 
@@ -96,7 +96,7 @@ function LOTJ.setDateTime (the) end
 ---set a global variable
 ---@param varName string the name of the variable to set. It must include a namespace, preferably the name of the area setting it, like "wroona.myVar"
 ---@param value any the value, a string, number, or boolean. Pass in nil here to remove a variable.
----@param ttl number the number of seconds to keep the variable, in seconds. (optional, if not specified it's kept indefinitely)
+---@param ttl? number the number of seconds to keep the variable, in seconds. (optional, if not specified it's kept indefinitely)
 function LOTJ.setGlobalVar (varName, value, ttl) end
 
 ---remove all color codes from a string
